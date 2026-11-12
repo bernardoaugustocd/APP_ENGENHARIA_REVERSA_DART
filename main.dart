@@ -8,7 +8,7 @@ void main() {
   print('===================================');
 
   String nome = 'Mariana';
-  int idade = '17'; // ERRO
+  int idade = 17; // ERRO
   String turma = 'Tecnico em Informatica';
 
   double nota1 = 8.0;
@@ -16,7 +16,7 @@ void main() {
   double nota3 = 9.0;
 
   print('Nome: $nome');
-  print('Idade: $idade') // ERRO
+  print('Idade: $idade'); // ERRO
   print('Turma: $turma');
 
   print('\n--- NOTAS ---');
@@ -25,20 +25,20 @@ void main() {
   print('Terceira nota: $nota3');
 
   double soma = nota1 + nota2 + nota3;
-  double media = soma / 2; // ERRO LOGICO
+  double media = soma / 3; // ERRO LOGICO
   print('Media final: $media');
 
   print('\n--- RESULTADO ---');
   if (media >= 6.0) {
     print('Situacao: APROVADO');
   } else {
-    print('Situacao: REPROVADO') // ERRO
+    print('Situacao: REPROVADO'); // ERRO
   }
 
   print('\n--- FAIXA ETARIA ---');
   if (idade >= 18) {
     print('Aluno maior de idade');
-  else { // ERRO
+  } else { // ERRO
     print('Aluno menor de idade');
   }
 
@@ -51,7 +51,7 @@ void main() {
   int contador = 3;
   while (contador > 0) {
     print('Contagem: $contador');
-    contador++; // ERRO LOGICO: nao termina
+    contador--; // ERRO LOGICO: nao termina
   }
 
   print('\n--- RESUMO FINAL ---');
@@ -61,7 +61,7 @@ void main() {
 
 void mostrarResumo(String aluno, double media) {
   print('Aluno: $aluno');
-  print('Media: $notaFinal'); // ERRO: variavel inexistente
+  print('Media: $media'); // ERRO: variavel inexistente
   if (media >= 6.0) {
     print('Parabens pelo resultado!');
   } else {
